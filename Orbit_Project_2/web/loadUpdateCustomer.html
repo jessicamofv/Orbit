@@ -1,0 +1,58 @@
+<fieldset>
+
+    <form id="update-customer-form" class="pure-form pure-form-stacked" method="post" action="updateCustomer">
+        <fieldset>
+            <legend><strong>Update Customer</strong> - Fill in this customer's Account Number and only the fields to be changed</legend>
+
+            <div class="pure-g-r">
+
+                <div class="pure-u-1-3">                                                                                                                                                                                   
+
+                    <div class="pure-u-1 pure-u-med-1-3">
+                        <label for="accountNo">Account Number*:</label>
+                        <input id="accountNo" name='accountNo' type="text" required>
+                    </div>
+                    
+                </div>
+
+                <div class="pure-u-1-3">
+                    <div class="pure-u-1 pure-u-med-1-8">
+                        <label for="creditCardNo">Credit Card Number:</label>
+                        <input id="creditCardNo" name="creditCardNo" type="text" >
+                    </div>       
+
+                    <div class="pure-u-1 pure-u-med-1-3">
+                        <label for="email">Username/Email Address:</label>
+                        <input id="email" name="email" type="text" >
+                    </div>
+                </div>
+
+                <div class="pure-u-1-3">                                                                                                                                                                                   
+
+                    <div class="pure-u-1 pure-u-med-1-8">
+                        <label for="password">Password:</label>
+                        <input id="password" name="password" type="password">
+                    </div>  
+
+                    <div class="pure-u-1 pure-u-med-1-3">
+                        <label for="rating">Rating:</label>
+                        <input id="rating" name='rating' type="text">
+                    </div>
+
+                </div>
+
+            </div>                                                                     
+
+        </fieldset>
+
+        <div>&nbsp</div>
+
+        <button type="submit" class="pure-button pure-button-primary">Update Customer Account!</button>
+        <!--    <span id="signupError" style="color:red">${requestScope.errorMessage}</span>-->
+
+    </form>
+
+    <div>&nbsp</div>
+
+    <div>&nbsp</div>
+</fieldset>

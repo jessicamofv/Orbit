@@ -1,0 +1,21 @@
+<script>
+    $('#accountNo').val(localStorage.getItem("accountNo"));
+</script>
+
+<fieldset>
+
+    <form id="reservation-history-form" class="pure-form pure-form-stacked" method="post" action="reservationHistory">
+        <fieldset>
+            
+            <legend><strong>Reservation History</strong></legend>
+
+            <input id="accountNo" name='accountNo' type="hidden" />                                                                     
+
+        </fieldset>
+
+        <button type="submit" class="pure-button pure-button-primary">View Reservation History!</button>
+        <!--    <span id="signupError" style="color:red">${requestScope.errorMessage}</span>-->
+
+    </form>
+    
+</fieldset>

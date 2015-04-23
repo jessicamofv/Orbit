@@ -1,0 +1,114 @@
+<fieldset>
+
+    <form id="update-employee-form" class="pure-form pure-form-stacked" method="post" action="updateEmployee">
+        <fieldset>
+            <legend><strong>Update Employee</strong> - Fill in this employee's Social Security Number and only the fields to be changed</legend>
+
+            <div class="pure-g-r">
+
+                <div class="pure-u-1-3">                                                                                                                                                                                   
+
+                    <div class="pure-u-1 pure-u-med-1-3">
+                        <label for="socialSecurityNum">Social Security Number*:</label>
+                        <input id="social-security-num" name='socialsecurity' type="text" required>
+                    </div>
+                    
+                </div>
+
+                <div class="pure-u-1-3">
+                    <div class="pure-u-1 pure-u-med-1-8">
+                        <label for="employeeType">This employee is a...</label>
+                        <label for="employeeTypeRep" class="pure-radio">
+                            <input id="employee-type-rep" type="radio" name="employee-type-radios" value="0">
+                            Customer Representative
+                        </label>
+                        <label for="employeeTypeMgr" class="pure-radio">
+                            <input id="employee-type-mgr" type="radio" name="employee-type-radios" value="1">
+                            Manager
+                        </label>
+                    </div>       
+
+                    <div class="pure-u-1 pure-u-med-1-3">
+                        <label for="email">Username/Email Address:</label>
+                        <input id="email" name="email" type="text">
+                    </div>
+
+
+
+                    <!--                <div class="pure-u-1 pure-u-med-1-8">
+                                        <label for="confirmPassword">Confirm Password*</label>
+                                        <input id="confirm-password" name='confirm-password' type="password" required>
+                                    </div>-->
+
+                </div>
+
+                <div class="pure-u-1-3">                                                                                                                                                                                   
+
+                    <div class="pure-u-1 pure-u-med-1-8">
+                        <label for="password">Password:</label>
+                        <input id="password" name="password" type="password">
+                    </div>  
+
+                    <div class="pure-u-1 pure-u-med-1-3">
+                        <label for="hourlyRate">Hourly Rate:</label>
+                        <input id="hourly-rate" name='hourly-rate' type="text">
+                    </div>
+
+
+
+                </div>
+
+                <!--                <div class="pure-u-1-3">                                                                                                                                                                                   
+                
+                                    <div class="pure-u-1 pure-u-med-1-3">
+                                        <label for="first-name">First Name*</label>
+                                        <input id="first-name" name='first-name' type="text" required>
+                                    </div>
+                
+                                    <div class="pure-u-1 pure-u-med-1-3">
+                                        <label for="last-name">Last Name*</label>
+                                        <input id="last-name" name='last-name' type="text" required>
+                                    </div>
+                
+                                    <div class="pure-u-1 pure-u-med-1-3">
+                                        <label for="address">Address*</label>
+                                        <input id="address" name='address' type="text" required>
+                                    </div>
+                
+                                    <div class="pure-u-1 pure-u-med-1-3">
+                                        <label for="city">City*</label>
+                                        <input id="city" name='city' type="text" required>
+                                    </div>
+                
+                                    <div class="pure-u-1 pure-u-med-1-3">
+                                        <label for="state">State*</label>
+                                        <input id="state" name='state' type="text" required>
+                                    </div>
+                
+                                    <div class="pure-u-1 pure-u-med-1-3">
+                                        <label for="zip-code">Zip Code*</label>
+                                        <input id="zip-code" name='zip' type="text" required>
+                                    </div>
+                
+                                    <div class="pure-u-1 pure-u-med-1-3">
+                                        <label for="telephone">Telephone</label>
+                                        <input id="telephone" name='telephone' type="text">
+                                    </div>
+                
+                                </div>                -->
+
+            </div>                                                                     
+
+        </fieldset>
+
+        <div>&nbsp</div>
+
+        <button type="submit" class="pure-button pure-button-primary">Update Employee Account!</button>
+        <!--    <span id="signupError" style="color:red">${requestScope.errorMessage}</span>-->
+
+    </form>
+
+    <div>&nbsp</div>
+
+    <div>&nbsp</div>
+</fieldset>

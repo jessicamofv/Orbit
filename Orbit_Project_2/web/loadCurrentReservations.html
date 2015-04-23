@@ -1,0 +1,21 @@
+<script>
+    $('#accountNo').val(localStorage.getItem("accountNo"));
+</script>
+
+<fieldset>
+
+    <form id="current-reservations-form" class="pure-form pure-form-stacked" method="post" action="currentReservations">
+        <fieldset>
+            
+            <legend><strong>Current Reservations</strong></legend>
+            
+            <input id="accountNo" name='accountNo' type="hidden" />
+            
+        </fieldset>
+
+        <button type="submit" class="pure-button pure-button-primary">View Current Reservations!</button>
+        <!--    <span id="signupError" style="color:red">${requestScope.errorMessage}</span>-->
+
+    </form>
+    
+</fieldset>

@@ -1,0 +1,95 @@
+<fieldset><legend><strong>Employees</strong></legend>
+
+<div class="pure-g-r">
+
+    <div class="pure-u-1-3">
+        <label for="add" class="pure-radio">
+            <input id="add-employee-option" type="radio" name="empActions" value="add">
+            Add
+        </label>
+    </div>
+
+    <div class="pure-u-1-3">
+        <label for="update" class="pure-radio">
+            <input id="update-employee-option" type="radio" name="empActions" value="update">
+            Update
+        </label>
+    </div>
+    <div class="pure-u-1-3">
+        <label for="delete" class="pure-radio">
+            <input id="delete-employee-option" type="radio" name="empActions" value="delete">
+            Delete
+        </label>
+    </div>
+    </div>
+
+
+<div>&nbsp</div>
+
+
+<script>
+
+    $('#add-employee-option').click(function() {
+        if ($('#add-employee-option').is(':checked')) {
+            $('#add-employee').load('loadAddEmployee.html');
+        }
+    });
+    
+    $('#update-employee-option').click(function() {
+         if ($('#update-employee-option').is(':checked')) {
+            $('#add-employee').load('loadUpdateEmployee.html');
+        }
+    });
+        
+    $('#delete-employee-option').click(function() {
+         if ($('#delete-employee-option').is(':checked')) {
+            $('#add-employee').load('loadDeleteEmployee.html');
+        }
+    });
+
+//    $('#add-employee-form').ajaxSubmit({url: 'addEmployee', type: 'post'});
+</script>
+
+<div id='add-employee'>
+
+
+</div>
+
+</fieldset>
+<!--<div class="pure-g-r">
+
+    <div class="pure-u-1-4">
+        <div class="pure-u-1 pure-u-med-1-3">
+            <button class="pure-button-secondary" id="emp-add-button">Add Employee</button>
+        </div>
+    </div>
+
+    <div class="pure-u-3-4">
+        <div class="pure-u-1 pure-u-med-1-3">
+            <table id="employee-data" class="pure-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>SSN</th>
+                        <th>Is Manager</th>
+                        <th>Start Date</th>
+                        <th>Hourly Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 0000</td>
+                        <td>Boone</td>
+                        <td>12301240924</td>
+                        <td>
+                            <button class="pure-button-secondary" id="emp-edit-button">Edit</button>
+                            &nbsp;&nbsp;&nbsp;
+                            <button class="pure-button-secondary" id="emp-delete-button">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>-->
